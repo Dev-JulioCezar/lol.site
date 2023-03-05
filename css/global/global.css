@@ -1,0 +1,24 @@
+nav,
+h1,
+li,
+ul,
+body {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ponto {
+  color: #ffbb00;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

@@ -1,0 +1,100 @@
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.main-bg {
+  background: linear-gradient(#111, rgb(74, 74, 74) 30%, #fff 75%);
+}
+
+.main-content p {
+  margin-bottom: 40px;
+}
+.content-tresh,
+.content-lux,
+.content-leona {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.main-button {
+  padding: 10px 20px;
+  background: linear-gradient(#ffc600, #c98600);
+  border-radius: 4px;
+  color: #4f3502;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.main-button:hover {
+  background: linear-gradient(#edba00, #b47801);
+}
+
+.content-tresh {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.content-tresh h1 {
+  background-clip: border-box;
+  background: linear-gradient(#676767, #cdcdcd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-tresh p {
+  background-clip: border-box;
+  background: linear-gradient(#a8a8a8, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-lux h2 {
+  background-clip: border-box;
+  background: linear-gradient(#313131, #191919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-lux p {
+  background-clip: border-box;
+  background: linear-gradient(#313131, #191919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-tresh h1,
+.content-lux h1,
+.content-leona h1 {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1350px) and (max-width: 1799px) {
+  .img-wrapper {
+    position: absolute;
+    display: block;
+    right: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-tresh,
+  .content-lux,
+  .content-leona {
+    grid-template-columns: 1fr;
+  }
+
+  .img-lux,
+  .img-leona {
+    grid-row: 2;
+    margin: 60px 0;
+  }
+}
+
+/* @media(max-width:600px) {
+  .main-content h1{
+    font-size: 2.5rem;
+  }
+} */
