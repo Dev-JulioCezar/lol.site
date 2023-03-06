@@ -45,29 +45,12 @@
 }
 
 .content-tresh p {
-  background-clip: border-box;
-  background: linear-gradient(#a8a8a8, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.content-lux h2 {
-  background-clip: border-box;
-  background: linear-gradient(#313131, #191919);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.content-lux p {
-  background-clip: border-box;
-  background: linear-gradient(#313131, #191919);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ color: #ededed;
 }
 
 .content-tresh h1,
-.content-lux h1,
-.content-leona h1 {
+.content-lux h2,
+.content-leona h2 {
   margin-bottom: 30px;
 }
 
@@ -86,6 +69,11 @@
     grid-template-columns: 1fr;
   }
 
+  .content-tresh {
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+
   .img-lux,
   .img-leona {
     grid-row: 2;
@@ -93,8 +81,39 @@
   }
 }
 
-/* @media(max-width:600px) {
+@media(max-width:600px) {
+  .main-content p {
+    font-size: 20px;
+  }
   .main-content h1{
     font-size: 2.5rem;
   }
-} */
+
+  .content-lux h2,
+  .content-leona h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width:400px) {
+  .main-content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .main-content h1{
+    font-size: 2rem;
+  }
+
+  .content-lux h2,
+  .content-leona h2 {
+    font-size: 2rem;
+  }
+  .content-tresh {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .main-button{
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+}

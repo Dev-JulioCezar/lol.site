@@ -9,3 +9,6 @@
 
 /* main */
 @import "./main/main.css";
+
+/* Dicas */
+@import "./main/dicas.css";

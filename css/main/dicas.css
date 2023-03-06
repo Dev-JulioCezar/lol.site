@@ -1,0 +1,77 @@
+.content-dicas {
+  background: url("../../img/champs_Mini/Heimerdinger_fundo2.png") no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  padding-bottom: 200px;
+}
+
+.content-dicas-intro {
+  display: grid;
+  padding:  60px 160px 0px  140px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-dicas h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.content-dicas-perfil {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+.content-dicas-perfil ul {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding: 40px;
+}
+
+.content-dicas-perfil li {
+  min-width: max-content;
+}
+
+.content-dicas-perfil li a {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  color: #3f3f3f;
+}
+
+.content-dicas a img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.content-dicas a img {
+  transition: transform 0.5s ease;
+}
+
+@media(max-width:800px) {
+
+  .content-dicas {
+    margin-top: 10px;
+    padding-bottom: 60px;
+  }
+  .content-dicas-perfil {
+    display: block;
+  }
+
+  .content-dicas-intro {
+    padding: 0 60px;
+  }
+}
+
+@media(max-width:600px) {
+  .content-dicas-intro p {
+    font-size: 15px;
+  }
+  .content-dicas-intro h2{
+    font-size: 2rem;
+  }
+}
